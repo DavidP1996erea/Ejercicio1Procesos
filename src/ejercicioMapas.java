@@ -23,7 +23,7 @@ public class ejercicioMapas {
         }
 
         try {
-            Process p = pb.start();
+                Process p = pb.start();
 
 
             int codRet = p.waitFor();

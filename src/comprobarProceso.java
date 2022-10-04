@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Map;
@@ -14,7 +15,9 @@ public class comprobarProceso {
 
         ProcessBuilder pb = new ProcessBuilder(args);
 
-        pb.inheritIO();
+        pb.command("java", "procesoLento");
+        pb.redirectOutput(new File("C:\\Users\\dperea\\eclipse-workspace\\Ejercicio1Procesos\\salidaProcesoLento.txt"));
+      //  pb.inheritIO();
 
 
         Process p = pb.start();
