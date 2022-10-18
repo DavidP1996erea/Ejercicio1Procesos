@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Map;
 
-public class ejercicioMapas {
+public class Ejercicio1_Mapas {
     public static void main(String[] args) {
         if (args.length <= 0) {
             System.out.println("Debe indicarse comando a ejecutar.");
@@ -10,9 +10,19 @@ public class ejercicioMapas {
             System.exit(1);
         }
 
+        /**
+         * Se guarda el comando a ejecutar, como se necesita un array se está usando el args propio de la clase,
+         * los comando son introducidos a través del intelliJ (Modify run configuration)
+         */
         ProcessBuilder pb = new ProcessBuilder(args);
 
+        /**
+         * Redirige la salida estándar y de error de los subprocesos creados hacia las del proceso padre,
+         * y su entrada estándar desde la del proceso padre.
+         */
         pb.inheritIO();
+
+
 
         Map<String, String> mapa = pb.environment();
 

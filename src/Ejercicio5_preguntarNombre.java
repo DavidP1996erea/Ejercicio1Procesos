@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class preguntarNombre {
+public class Ejercicio5_preguntarNombre {
     public static void main(String[] args) {
 
 

@@ -20,7 +20,7 @@ public class clase2
 
         for(int i=0; i<10;i++){
 
-            if(Integer.parseInt(listaIps.get(i).substring(0,2))<224){
+            if(Integer.parseInt(listaIps.get(i).substring(0,3))<224){
                 System.out.println(listaIps.get(i));
             }
 

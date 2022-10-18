@@ -8,17 +8,14 @@ public class clase3 {
 
         Scanner sc = new Scanner(System.in);
 
-        List<String> listaIps = new ArrayList<>();
-
-        int contador=0;
+        List<String> listaIps = new ArrayList<String>();
 
 
-        while (contador<10){
+
+        for(int i = 0; i<10;i++){
 
             listaIps.add(sc.nextLine());
 
-
-            contador++;
         }
 
 
