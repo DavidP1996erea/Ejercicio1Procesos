@@ -12,7 +12,7 @@ public class Ejercicio9 {
         /**
          * Se guarda el comando a ejecutar en un array
          */
-        String [] comando = {"java","preguntarNombre"};
+        String [] comando = {"java","Ejercicio5_preguntarNombre"};
 
 
         try{
@@ -24,7 +24,7 @@ public class Ejercicio9 {
             /**
              * Se lee el fichero entrada.txt, que contiene un nombre
              */
-            FileReader fre = new FileReader("entrada.txt");
+            FileReader fre = new FileReader("C:\\Users\\david\\IdeaProjects\\Ejercicio1Procesos\\src\\entrada.txt");
             BufferedReader br = new BufferedReader(fre);
 
             /**
@@ -71,6 +71,7 @@ public class Ejercicio9 {
             br2.close();
 
         } catch (IOException e) {
+
             throw new RuntimeException(e);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
